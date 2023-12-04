@@ -1,6 +1,6 @@
 ![Kotlin](https://img.shields.io/badge/kotlin-%237F52FF.svg?style=for-the-badge&logo=kotlin&logoColor=white)
 
-Desafio de Projeto (Lab)
+## Desafio de Projeto (Lab)
 
 ### Sobre o Projeto
 Este projeto é um desafio de programação criado como parte do repositório "Aprenda Kotlin com Exemplos". O objetivo deste desafio é aplicar e avaliar os conhecimentos técnicos adquiridos através dos exemplos e tutoriais disponíveis no repositório.
