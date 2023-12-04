@@ -1,18 +1,41 @@
 ![Kotlin](https://img.shields.io/badge/kotlin-%237F52FF.svg?style=for-the-badge&logo=kotlin&logoColor=white)
 
-## Desafio de Projeto (Lab)
 
-### Sobre o Projeto
-Este projeto é um desafio de programação criado como parte do repositório "Aprenda Kotlin com Exemplos". O objetivo deste desafio é aplicar e avaliar os conhecimentos técnicos adquiridos através dos exemplos e tutoriais disponíveis no repositório.
+# Gestão de Formação Educacional em Kotlin
 
-Neste projeto, abordamos um domínio de aplicação específico relacionado ao campo da educação tecnológica. A DIO (Digital Innovation One) oferece uma gama de Formacoes que são cuidadosamente projetadas para ensinar conjuntos de habilidades específicas na área de tecnologia da informação. Cada Formacao é composta de vários ConteudosEducacionais que juntos preparam os profissionais para os desafios do mercado de trabalho atual.
+Este projeto implementa um sistema para gerenciar formações educacionais, permitindo a criação de conteúdos de ensino, matrícula de alunos e visualização de informações detalhadas sobre as formações.
 
-Funcionalidades
-O sistema modelado neste projeto apresenta as seguintes funcionalidades chave:
+## Estrutura e Design
 
-Gestão de Formações: Criação e gerenciamento de formações educacionais, incluindo atributos como nome e nível.
-Conteúdos Educacionais: Cada formação possui uma série de conteúdos educacionais que compõem o currículo de aprendizado.
-Matrícula de Alunos: Capacidade de matricular alunos nas formações, simulando um ambiente educacional real.
+#### Classes e Tipos de Dados
+
+- **Nivel (Enum):** Define os níveis de dificuldade dos cursos (Básico, Intermediário, Difícil).
+- **Usuario (Data Class):** Representa os alunos, com validação de dados para garantir nomes válidos e IDs positivos.
+- **ConteudoEducacional (Data Class):** Armazena informações dos conteúdos das formações, incluindo nome, duração e nível, com validação para duração positiva.
+- **Formacao (Data Class):** Agrupa `ConteudosEducacionais` e gerencia uma lista de `Usuarios` inscritos.
+
+#### Validação de Entrada de Dados
+
+- Utilização de `require` para assegurar dados consistentes e válidos.
+
+#### Lazy Initialization
+
+- Uso do `by lazy` para calcular a duração total dos cursos de forma eficiente.
+
+## Funcionalidades Implementadas
+
+- `Matrícula de Alunos`: Permite adicionar alunos às formações, com verificação contra matrículas duplicadas.
+
+- `Visualização Detalhada da Formação`: `getAllFormacaoData` exibe informações completas sobre a formação, incluindo conteúdos educacionais e alunos matriculados.
+
+## Vantagens
+
+- `Clareza e Legibilidade`: Código bem estruturado, facilitando a compreensão e manutenção.
+
+- `Reutilização e Manutenibilidade`: Classes facilmente reutilizáveis e extensíveis.
+
+- `Verificação de Dados Robusta`: Validção robusta nos construtores para garantir a integridade dos dados.
+
 
 ### ⌨ Clone
 
